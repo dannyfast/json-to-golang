@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    padding-right: 2px;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+::-webkit-scrollbar-corner {
+    background: #444;
+}
+
+html, body, #root, .home-page {
+    height: 100vh;
+}
+
+.ace_scrollbar-h {
+    overflow-x: auto;
+}
+
+.copied-status-text {
+    color: #0ffc03;
+    letter-spacing: 0.06rem;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    margin-top: 2px;
+}
+
+.copy-clipboard {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 1px;
+}
+
+.copy-clipboard-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.copy-clipboard:hover {
+    cursor: pointer;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page-content {
+    flex: 1;
+    display: flex;
+    height: calc(100% - 112px);
+}
+
+.home-page-content-cell {
+    flex: 1;
+    flex-shrink: 0;
+    display: flex;
+    overflow-x: auto;
+    border: 1px solid #222;
+}
+
+.home-page-content-cell:first-child {
+    border-left: none;
+    border-bottom: none;
+}
+
+.home-page-content-cell:nth-child(2) {
+    border-right: none;
+    border-bottom: none;
+}
+
+.home-page-header {
+    display: flex;
+    height: 60px;
+}
+
+.home-page-footer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #444;
+    border-top: 2px solid #222;
+    color: white;
+    padding: 0 2rem;
+}
+
+.home-page-footer > a {
+    padding: 0 0.4rem;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.header-cell {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #444;
+    border: 1px solid #222;
+    font-size: 1.2rem;
+}
+
+.header-cell:first-child {
+    border-top: none;
+    border-left: none;
+}
+
+.header-cell:nth-child(2) {
+    border-top: none;
+    border-right: none;
+}
+
+
+.resulting-struct {
+    width: 100%;
+
+    /* these are all overrides for the given style from prismjs */
+    margin: 0!important;
+    border: none!important;
+    border-radius: 0!important;
+    background: #444!important;
+    box-shadow: none!important;
+}
